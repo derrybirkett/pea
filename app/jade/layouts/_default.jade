@@ -12,13 +12,27 @@ html(lang="en")
     // endbuild
 
   body(class=page)
-    header
-      h1 Ahoi, pea!
+    
+    .container-fluid
+      .row.header
+        .col-md-3
+          &nbsp;
+        .col-md-4
+          h1 Ahoy
+    
+      .row.main
+        .col-md-3.sidebar
+          h4 Sidebar
+        .col-md-4
+          .feed
+            .post
+              h1 Entry Title
+              p Excepteur anim do nulla culpa adipisicing duis ut. Proident anim sint aute qui est magna est. Duis non do do aliquip laborum duis exercitation. Exercitation id officia ex dolore exercitation mollit. Eiusmod tempor sit aute est dolore esse qui sint nostrud elit. Aliqua tempor veniam anim aliquip consectetur nisi officia cupidatat est ad aute magna sunt. Lorem id veniam officia minim eiusmod enim exercitation sit proident amet in fugiat laborum. Dolore quis ut occaecat et exercitation consectetur sunt magna mollit aliquip aliqua. Commodo consequat adipisicing sint proident nulla duis id et id laborum nisi voluptate anim. Tempor duis voluptate eiusmod officia elit amet.
 
-    block content
+          block content
 
-    // Footer
-    footer
+        // Footer
+        footer
 
     // build:js /scripts/main.js
     

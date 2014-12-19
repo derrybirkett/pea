@@ -6,6 +6,9 @@ html(lang="en")
     meta(content='', name='description')
     meta(content='', name='author')
     meta(content='3 days', name='revisit-after')
+      
+    script(src="//use.typekit.net/ekp2qzp.js")
+    script try{Typekit.load();}catch(e){}
 
     // build:css /styles/main.css
     link(href='/styles/main.css', rel='stylesheet')
@@ -13,30 +16,13 @@ html(lang="en")
 
   body(class=page)
     
-    .container-fluid
-      .row.header
-        .col-md-3
-          &nbsp;
-        .col-md-4
-          h1 Ahoy
-    
-      .row.main
-        .col-md-3.sidebar
-          h4 Sidebar
-        .col-md-4
-          .feed
-            .post
-              h1 Entry Title
-              p Excepteur anim do nulla culpa adipisicing duis ut. Proident anim sint aute qui est magna est. Duis non do do aliquip laborum duis exercitation. Exercitation id officia ex dolore exercitation mollit. Eiusmod tempor sit aute est dolore esse qui sint nostrud elit. Aliqua tempor veniam anim aliquip consectetur nisi officia cupidatat est ad aute magna sunt. Lorem id veniam officia minim eiusmod enim exercitation sit proident amet in fugiat laborum. Dolore quis ut occaecat et exercitation consectetur sunt magna mollit aliquip aliqua. Commodo consequat adipisicing sint proident nulla duis id et id laborum nisi voluptate anim. Tempor duis voluptate eiusmod officia elit amet.
+    block index
 
-          block content
-
-        // Footer
-        footer
+    // Footer
+    footer
 
     // build:js /scripts/main.js
-    
     script(src='/bower_components/jquery/dist/jquery.js')
-    
     script(src='/scripts/main.js')
     // endbuild
+        

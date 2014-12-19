@@ -1,25 +1,30 @@
 extends /layouts/_default
 
-block content
-  section
-    p this is powered by the jade template engine and served via node.js
-    p until now this is what you got. Only jQuery is included via bower. No other fancy js and css frameworks.
-    p but you can add them very easily. Just update your bower file and run <code>bower install</code>
+block index
 
-  section
-    p All jade files are supposed to be located under app/jade/. All .jade files with an _underscore are treated as partials and not rendered directly. Everything else is a jade file that is supposed to be a page.
-    p And this is how i thought about the directory structure of the jade directory
+  .container-fluid.index
+    .row.header
+      .col-md-3
+        &nbsp;
+      .col-md-4
+        .card.media
+          a.media-left.media-middle
+            img(src="http://www.gravatar.com/avatar/b3af8a49d41a465184e7620b936ccbe2.png", class="img-circle")
+            
+          .details.media-body
+            h1.media-heading Brk.tt
+            h5 A really interesting blogger
+          
+    .row.main
+      .col-md-3.sidebar
+        h4 &nbsp;
+      .col-md-4
+        .feed
+          .post
+            h1 HOW I LOVE PEOPLE ON THE INTERNET
+            p It was 4 in the morning when my sister came to say, nobody is watching the tv anymore, what the frick is happening to people I can’t live. 
 
-    pre.
-      jade
-      |-- index.jade
-      |-- layouts
-      |   |-- _default.jade
-      |-- page1
-      |  |-- index.jade
-      |       |-- partials
-      |           |-- _partial.jade
-      + - page2
-         |-- index.jade
-              |-- partials
-                  |-- _partial.jade
+          .post
+            h1 HOW I LOVE PEOPLE ON THE INTERNET
+            p It was 4 in the morning when my sister came to say, nobody is watching the tv anymore, what the frick is happening to people I can’t live. 
+            
